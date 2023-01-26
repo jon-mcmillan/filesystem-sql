@@ -5,7 +5,7 @@ const id = "simrex-id";
 
 let _callbacks = {};
 
-const worker = new Worker("/wasm/worker.sql-wasm.js");
+const worker = new Worker("./wasm/worker.sql-wasm.js");
 
 /**
  * @param {import('sql.js').QueryExecResult} result
