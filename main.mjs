@@ -1,7 +1,6 @@
 let dirHandle = null;
 let fsDirHandle = null;
 let fileHandle = null;
-const id = "simrex-id";
 
 let _callbacks = {};
 
@@ -89,7 +88,7 @@ const postMessage = (message) => {
 const listFiles = async () => {
   if (!fsDirHandle) {
     fsDirHandle = await window.showDirectoryPicker({
-      id,
+      id: "demo-folder",
       startIn: "downloads",
     });
   }
