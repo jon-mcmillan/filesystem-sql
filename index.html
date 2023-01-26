@@ -7,7 +7,20 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>File System Access API</h1>
+      <div class="card">
+        <button id="load" type="button">Load</button>
+        <button id="create-table" type="button">Create Table</button>
+        <button id="read-table" type="button">Read Table</button>
+        <button id="add-row" type="button">Add Row</button>
+        <button id="save" type="button">Save Changes</button>
+      </div>
+      <div>
+        <h2>Database</h2>
+        <div id="db"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
